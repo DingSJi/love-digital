@@ -1,0 +1,43 @@
+#main-about{
+	width: 72%;
+	margin: 0 auto;
+	height: 100%;
+}
+
+p{
+	font-family: 宋体;
+	font-size: 18px;
+	letter-spacing: 1px;
+}
+h3{
+	text-align: center;
+}
+ul {
+    list-style-type: disclosure-closed;
+    margin: 20px;
+}
+.rules li{
+	padding: 10px;
+}
+.friends{
+	display: grid;
+	grid-template-columns: auto auto auto auto auto;
+	justify-content: center;
+	gap: 1%;
+	background-color: #eee;
+}
+.friend img{
+	border-radius: 5px;
+}
+
+
+.copyright{
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	bottom: 0;
+}
+.copyright p{
+	font-size: 12px;
+	text-align: center;
+}

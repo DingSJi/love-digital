@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>爱数码商城</title>
+</head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/mycss.css">
+<script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<script type="text/javascript" src="js/myfocus-2.0.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="css/mF_fancy.css"> -->
+<script type="text/javascript">
+myFocus.set({
+	id:'myFocus',//ID
+	pattern:'mF_fancy',//·ç¸ñ
+	width:1108,//设置图片区域宽度(像素)
+    height:554,
+});
+</script>
+<style type="text/css">
+</style>
+<body>
+	<div id="header">
+		<div id="logo" ><img src="image/爱数码.png"><span>爱数码</span></div>
+		<div id="small-menu">
+			<ul class="small-menu">
+				<li ><a href="index.html">首页</a></li>
+				<li ><a href="gouwuche.html">购物车</a></li>
+				<li ><a href="about.html">关于我们</a></li>
+				<li ><a href="#" class="register">注册/</a><a href="#" class="login">登陆</a></li>
+			</ul>
+		</div>
+		<div class="modal fade" tabindex="-1" role="dialog" id="register">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				  <h4 class="modal-title">注册</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<div class="form-group">
+						  <label for="inputEmail3" class="col-sm-2 control-label">邮箱</label>
+						  <div class="col-sm-10">
+							<input type="email" class="form-control" id="inputEmail1" placeholder="请输入邮箱">
+						  </div>
+						</div>
+						<div class="form-group">
+						  <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+						  <div class="col-sm-10">
+							<input type="password" class="form-control" id="inputPassword1" placeholder="请输入密码">
+							<input type="password" class="form-control" id="inputPassword2" placeholder="请再次输入密码">
+						  </div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				  <button type="button" class="btn btn-primary">注册</button>
+				</div>
+			  </div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+		<div class="modal fade" tabindex="-1" role="dialog" id="login">
+			<div class="modal-dialog" role="document">
+			  <div class="modal-content">
+				<div class="modal-header">
+				  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				  <h4 class="modal-title">登录</h4>
+				</div>
+				<div class="modal-body">
+					<form class="form-horizontal">
+						<div class="form-group">
+						  <label for="inputEmail3" class="col-sm-2 control-label">邮箱</label>
+						  <div class="col-sm-10">
+							<input type="email" class="form-control" id="inputEmail2" placeholder="请输入邮箱">
+						  </div>
+						</div>
+						<div class="form-group">
+						  <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+						  <div class="col-sm-10">
+							<input type="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+						  </div>
+						</div>
+						<div class="form-group">
+						  <div class="col-sm-offset-2 col-sm-10">
+							<div class="checkbox">
+							  <label>
+								<input type="checkbox"> 记住我
+							  </label>
+							</div>
+						  </div>
+						</div>
+					</form>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				  <button type="button" class="btn btn-primary">登录</button>
+				</div>
+			  </div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		  </div><!-- /.modal -->
+	</div>
+	<div id="primary-menu">
+		<div id="big-menu">
+			<ul >
+				<li class="menu-item"><a href="#tab1">手机</a>
+					<ul >
+						<li><a href="#tab1">华为</a></li>
+						<li><a href="#tab1">苹果</a></li>
+						<li><a href="#tab1">小米</a></li>
+						<li><a href="#tab1">OPPO</a></li>
+						<li><a href="#tab1">vivo</a></li>
+						<li><a href="#tab1">三星</a></li>
+						<li><a href="#tab1">荣耀</a></li>
+					</ul>
+				</li>
+				<li class="menu-item"><a href="#tab2">电脑</a>
+					<ul >
+						<li><a href="#tab2">联想</a></li>
+						<li><a href="#tab2">惠普</a></li>
+						<li><a href="#tab2">华硕</a></li>
+						<li><a href="#tab2">戴尔</a></li>
+					</ul>
+				</li>
+				<li class="menu-item"><a href="#tab3">耳机音箱</a>
+					<ul >
+						<li><a href="#tab2">索尼</a></li>
+						<li><a href="#tab2">BOSE</a></li>
+						<li><a href="#tab2">漫步者</a></li>
+						<li><a href="#tab2">Apple</a></li>
+					</ul>
+				</li>
+				<li class="menu-item"><a href="#tab4">摄影摄像</a>
+					<ul >
+						<li><a href="#tab2">SONY</a></li>
+						<li><a href="#tab2">Canon</a></li>
+						<li><a href="#tab2">大疆</a></li>
+						<li><a href="#tab2">松下</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="search" ><input type="text" name="" placeholder="开始搜索" ></div>
+	</div>
+	<div id="index">
+		<div id="myFocus">
+			<div class="loading"><img src="image/loading.gif" alt="请稍候..." /></div>
+			  <div class="pic">
+				  <ul>
+					<li><a href="#1"><img src="image/pic1.png" thumb="" alt="" text="sssss"  /></a></li>
+					<li><a href="#2"><img src="image/pic2.png" thumb="" alt="" text="sssss" /></a></li>
+					<li><a href="#3"><img src="image/pic3.png" thumb="" alt="" text="sssss" /></a></li>
+					<li><a href="#3"><img src="image/pic4.png" thumb="" alt="" text="sssss" /></a></li>
+				  </ul>
+			</div>
+		</div>
+		
+		<div id="first">
+			<div class="products"><img src="image/product1.png"><br><span >Apple iPhone 13 pro</span><br><br><span style="color:#4B66B2;">￥7,999.00</span></div>
+			<div class="products"><img src="image/product2.png"><br><span >联想ThinkPad X1 Carbon</span><br><br><span style="color:#4B66B2;">￥9,999.00</span></div>
+			<div class="products"><img src="image/product3.png"><br><span >三星Galaxy Z Fold2 5G</span><br><br><span style="color:#4B66B2;">￥10,499.00</span></div>
+			<div class="products"><img src="image/product4.png"><br><span >华为 Mate40 5G 手机</span><br><br><span style="color:#4B66B2;">￥5,199.00</span></div>
+			<div class="products"><img src="image/product5.png"><br><span >Airpods Pro 无线蓝牙耳机</span><br><br><span style="color:#4B66B2;">￥1,499.00</span></div>
+		</div>
+		
+		<div id="second">
+			<div id="title"><span>热门数码</span></div>
+			<div id="grid">
+				<div class="hot"><img src="image/hot11.png"></div>
+				<div class="hot"><img src="image/hot12.png"></div>
+				<div class="hot"><img src="image/hot13.png"></div>
+				<div class="hot"><img src="image/hot21.png"></div>
+				<div class="hot"><img src="image/hot22.png"></div>
+				<div class="hot"><img src="image/hot23.png"></div>
+			</div>
+		</div>
+	
+		<div id="third">
+			<div id="title"><span>爱数码优选</span></div>
+			<div id="good">
+				<div class="good"><img src="image/good1.png"></div>
+				<div class="good"><img src="image/good2.png"></div>
+				<div class="good"><img src="image/good3.png"></div>
+				<div class="good"><img src="image/good4.png"></div>
+			</div>
+		</div>
+
+	</div>
+	<div class="content">
+		
+		<div id="tab1" class="tab-content">
+			<div id="mainpic"><img src="image/phone/pic1.jpg"></div>
+
+			<div id="first">
+				<div class="products"><img src="image/product1.png"><br><span>Apple iPhone 13 pro</span><br><br><span style="color:#4B66B2;">￥7,999.00</span></div>
+				<div class="products"><img src="image/product3.png"><br><span>三星Galaxy Z Fold2 5G</span><br><br><span style="color:#4B66B2;">￥10,499.00</span></div>
+				<div class="products"><img src="image/product4.png"><br><span>华为 Mate40 5G 手机</span><br><br><span style="color:#4B66B2;">￥5,199.00</span></div>
+				<div class="products"><img src="image/phone/recommend16.png"><br><span>荣耀50 1亿像素超清影像 5G</span><br><br><span style="color:#4B66B2;">￥2,399.00</span></div>
+		
+			</div>
+		
+			<div id="second">
+				<div id="title"><span>新鲜资讯</span></div>
+				<div id="new">
+					<div class="new"><img src="image/phone/new1.png"></div>
+					<div class="new"><img src="image/phone/new2.png"></div>
+					
+				</div>
+			</div>
+		
+			<div id="third">
+				<div id="title"><span>推荐产品</span></div>
+				<div id="recommend">
+					<!-- <div class="recommend"><img src="image/phone/new1.png"><br><span style="font-family: 微软雅黑;">男士休闲轻便造型</span><br><br><span style="font-family: 微软雅黑;color:#F8AE19;">4件配套</span></div>
+					<div class="recommend"><img src="image/zhaoxing2.jpg"><br><span style="font-family: 微软雅黑;">男士运动探索造型</span><br><br><span style="font-family: 微软雅黑;color:#F8AE19;">3件配套</span></div> -->
+					<div class="recommend"><img src="image/phone/recommend11.jpg" alt=""><hr>华为 HUAWEI Mate 40 RS 保时捷设计麒麟9000芯<br><span>￥10,999.00</span></div>
+					<div class="recommend"><img src="image/phone/recommend12.jpg" alt=""><hr>荣耀Play5 5G 66W超级快充 6400万超清四摄<br><span>￥1,999.00</span></div>
+					<div class="recommend"><img src="image/phone/recommend13.jpg" alt=""><hr>索尼（SONY）Xperia 1 III 智能5G 摄影拍照<br><span>￥6,399.00</span></div>
+					<div class="recommend"><img src="image/phone/recommend14.jpg" alt=""><hr>小米12 骁龙8 Gen1 黄金手感 6.28英寸视感屏<br><span>￥3,999.00</span></div>
+					<div class="recommend"><img src="image/phone/recommend15.jpg" alt=""><hr>小米12X 骁龙870 黄金手感 6.28英寸视感屏 <br><span>￥2,999.00</span></div>
+					<div class="recommend"><img src="image/phone/recommend16.png" alt=""><hr>荣耀50 1亿像素超清影像 5G 6.57英寸超曲屏 66W...<br><span>￥2,499.00</span></div>
+					<div class="recommend"><img src="image/phone/recommend21.jpg" alt=""><hr>OPPO Reno7 Pro 12+256GB 星雨<br><span>￥4,999.00</span></div>
+					<div class="recommend"><img src="image/phone/recommend22.jpg" alt=""><hr>Redmi Note 11 Pro+ 5G 三星AMOLED高刷屏<br><span>￥1,499.00</span></div>
+					<div class="recommend"><img src="image/phone/recommend23.jpg" alt=""><hr>vivo iQOO 9 12GB+256GB传奇版<br><span>￥5,999.00</span></div>
+					<div class="recommend"><img src="image/phone/recommend24.jpg" alt=""><hr>vivo iQOO U5 骁龙695 5000mAh大电池 120<br><span>￥1,699.00</span></div>
+					<div class="recommend"><img src="image/phone/recommend25.jpg" alt=""><hr>vivo X60 Pro 12GB+256GB 华彩 5G<br><span>￥3,999.00</span></div>
+					<div class="recommend"><img src="image/phone/recommend26.jpg" alt=""><hr>vivo Y52s 5G手机 8GB+128GB 莫奈<br><span>￥2,099.00</span></div>
+				</div>
+			</div>
+		
+		</div>
+		<div id="tab2" class="tab-content">
+			<div id="mainpic"><img src="image/pic2.png"></div>
+
+			<div id="first">
+				<div class="products"><img src="image/product2.png"><br><span>联想ThinkPad X1 Carbon</span><br><br><span style="color:#4B66B2;">￥9,999.00</span></div>
+				<div class="products"><img src="image/computer/Apple MacBook Pro 14英寸 M1 Pro芯片.jpg"><br><span>Apple MacBook Pro 14英寸 M1 Pro芯片</span><br><br><span style="color:#4B66B2;">￥11,199.00</span></div>
+				<div class="products"><img src="image/computer/recommend26.jpg"><br><span>小米笔记本Pro X 14</span><br><br><span style="color:#4B66B2;">￥7,999.00</span></div>
+				<div class="products"><img src="image/computer/HUAWEI MateBook E 2022款二合一笔记本.jpg"><br><span>HUAWEI MateBook E 2022款二合一笔记本</span><br><br><span style="color:#4B66B2;">￥7,499.00</span></div>
+				
+			</div>
+		
+			<div id="second">
+				<div id="title"><span>新鲜资讯</span></div>
+				<div id="new">
+					<div class="new"><img src="image/computer/new1.png"></div>
+					<div class="new"><img src="image/computer/new2.png"></div>
+					
+				</div>
+			</div>
+		
+			<div id="third">
+				<div id="title"><span>推荐产品</span></div>
+				<div id="recommend">
+					<div class="recommend"><img src="image/computer/recommend11.jpg" alt=""><hr>戴尔DELL成就13.3英寸全面屏英特尔Evo <br><span>￥4,999.00</span></div>
+					<div class="recommend"><img src="image/computer/recommend12.jpg" alt=""><hr>戴尔DELL成就3400 14英寸全面屏笔记本电脑 <br><span>￥4,899.00</span></div>
+					<div class="recommend"><img src="image/computer/recommend13.jpg" alt=""><hr>华硕（ASUS）VivoBook15 15.6英寸高清屏笔记本电脑<br><br><span>￥5,599.00</span></div>
+					<div class="recommend"><img src="image/computer/recommend14.jpg" alt=""><hr>华为HUAWEI MateBook E 12.6英寸OLED <br><span>￥5,999.00</span></div>
+					<div class="recommend"><img src="image/computer/recommend15.jpg" alt=""><hr>惠普(HP)战66四代 锐龙版 14英寸轻薄笔记本电脑 <br><span>￥5,399.00</span></div>
+					<div class="recommend"><img src="image/computer/recommend16.jpg" alt=""><hr>联想笔记本电脑小新Air14 英特尔酷睿i5 <br><span>￥4,799.00</span></div>
+					<div class="recommend"><img src="image/computer/recommend21.jpg" alt=""><hr>联想笔记本电脑小新Air15锐龙版 15.6英 <br><span>￥5,999.00</span></div>
+					<div class="recommend"><img src="image/computer/recommend22.jpg" alt=""><hr>联想笔记本电脑小新Pro16锐龙版 16英寸 <br><span>￥5,999.00</span></div>
+					<div class="recommend"><img src="image/computer/recommend23.jpg" alt=""><hr>联想笔记本电脑ThinkPad X1<br><span>￥8,999.00</span></div>
+					<div class="recommend"><img src="image/computer/recommend24.jpg" alt=""><hr>联想ThinkBook 14 2021款 14英寸轻薄笔记本电脑<br><span>￥5,999.00</span></div>
+					<div class="recommend"><img src="image/computer/recommend25.jpg" alt=""><hr>荣耀笔记本 MagicBook X15 15.6英寸笔记本电脑<br><span>￥5,399.00</span></div>
+					<div class="recommend"><img src="image/computer/recommend26.jpg" alt=""><hr> 小米笔记本Pro X 14<br><span>￥7,999.00</span></div>
+		
+				</div>
+			</div>
+		
+		</div>
+		<div id="tab3" class="tab-content">
+			<div id="mainpic"><img src="image/ear/pic1.jpg"></div>
+
+			<div id="first">
+				<div class="products"><img src="image/ear/product1.jpg"><br><span>索尼（SONY）WI-1000X</span><br><br><span style="color:#4B66B2;">￥2,099.00</span></div>
+				<div class="products"><img src="image/ear/product2.jpg"><br><span>Bose QuietComfort 35 无线耳机</span><br><br><span style="color:#4B66B2;">￥1,199.00</span></div>
+				<div class="products"><img src="image/ear/product3.jpg"><br><span>Bose 700 无线消噪耳机</span><br><br><span style="color:#4B66B2;">￥2,399.00</span></div>
+				<div class="products"><img src="image/ear/product4.jpg"><br><span>Beats Powerbeats Pro 完全无线</span><br><br><span style="color:#4B66B2;">￥1,999.00</span></div>
+		
+			</div>
+		
+			<div id="second">
+				<div id="title"><span>新鲜资讯</span></div>
+				<div id="new">
+					<div class="new"><img src="image/ear/new1.png"></div>
+					<div class="new"><img src="image/ear/new2.png"></div>
+					
+				</div>
+			</div>
+		
+			<div id="third">
+				<div id="title"><span>推荐产品</span></div>
+				<div id="recommend">
+					<div class="recommend"><img src="image/ear/recommend11.jpg" alt=""><hr>荣耀原装三键线控带麦<br><br><span>￥1,999.00</span></div>
+					<div class="recommend"><img src="image/ear/recommend12.jpg" alt=""><hr>索尼（SONY）WI-1000X Hi-Res<br><span>￥1,999.00</span></div>
+					<div class="recommend"><img src="image/ear/recommend13.jpg" alt=""><hr>小米 Redmi AirDots 真无线蓝<br><span>￥6,399.00</span></div>
+					<div class="recommend"><img src="image/ear/recommend14.jpg" alt=""><hr>恩科（ENKOR）EW13 真无线耳机<br><span>￥399.00</span></div>
+					<div class="recommend"><img src="image/ear/recommend15.jpg" alt=""><hr>西伯利亚(XIBERIA) K5 电竞耳机<br><span>￥2,999.00</span></div>
+					<div class="recommend"><img src="image/ear/recommend16.jpg" alt=""><hr>漫步者智能家居音箱<br><br><span>￥2,499.00</span></div>
+					<div class="recommend"><img src="image/ear/recommend21.jpg" alt=""><hr>铁三角 ATH-MSR7 便携头戴耳机<br><span>￥4,999.00</span></div>
+					<div class="recommend"><img src="image/ear/recommend22.jpg" alt=""><hr>Apple AirPods 配无线充电盒<br><span>￥1,499.00</span></div>
+					<div class="recommend"><img src="image/ear/recommend23.jpg" alt=""><hr>百度智能音箱<br><br><span>￥399.00</span></div>
+					<div class="recommend"><img src="image/ear/recommend24.jpg" alt=""><hr>索尼（SONY）NW-ZX505 安<br><span>￥1,699.00</span></div>
+					<div class="recommend"><img src="image/ear/recommend25.jpg" alt=""><hr>漫步者（EDIFIER）K800 头戴耳机<br><span>￥3,999.00</span></div>
+					<div class="recommend"><img src="image/ear/recommend26.jpg" alt=""><hr>索尼（SONY）有线耳机<br><br><span>￥2,099.00</span></div>
+				</div>
+			</div>
+		
+		</div>
+		<div id="tab4" class="tab-content">
+			<div id="mainpic"><img src="image/camera/pic1.jpg"></div>
+
+			<div id="first">
+				<div class="products"><img src="image/camera/佳能（Canon）EOS 200D II.jpg"><br><span>佳能 EOS 200D II</span><br><br><span style="color:#4B66B2;">￥5,199.00</span></div>
+				<div class="products"><img src="image/camera/佳能（Canon）EOS 5D Mark IV.jpg"><br><span>佳能 EOS 5D Mark IV</span><br><br><span style="color:#4B66B2;">￥27,199.00</span></div>
+				<div class="products"><img src="image/camera/索尼（SONY）FDR-AX700 4K HDR.jpg"><br><span>索尼 Alpha 7 III(7M3K)</span><br><br><span style="color:#4B66B2;">￥5,199.00</span></div>
+				<div class="products"><img src="image/camera/索尼（SONY）ZV-1 Vlog数码相机.jpg"><br><span>索尼 ZV-1 Vlog数码相机</span><br><br><span style="color:#4B66B2;">￥5,999.00</span></div>
+		
+			</div>
+		
+			<div id="second">
+				<div id="title"><span>新鲜资讯</span></div>
+				<div id="new">
+					<div class="new"><img src="image/camera/new1.jpg"></div>
+					<div class="new"><img src="image/camera/new2.jpg"></div>
+				</div>
+			</div>
+		
+			<div id="third">
+				<div id="title"><span>推荐产品</span></div>
+				<div id="recommend">
+					<div class="recommend"><img src="image/camera/recommend11.jpg" alt=""><hr>富士（FUJIFILM）X100V 数码相机 旁轴 2610万像素<br><span>￥9,790.00</span></div>
+					<div class="recommend"><img src="image/camera/recommend12.jpg" alt=""><hr>徕卡（Leica）D-LUX7多功能便携式数码相机 银色<br><span>￥9,900.00</span></div>
+					<div class="recommend"><img src="image/camera/recommend13.jpg" alt=""><hr>尼康（Nikon）D780 单反相机 专业级 全画幅套机<br><span>￥17,200.00</span></div>
+					<div class="recommend"><img src="image/camera/recommend14.jpg" alt=""><hr>索尼（SONY）Alpha 7 III(7M3K)全画幅单数码相机<br><span>￥14,299.00</span></div>
+					<div class="recommend"><img src="image/camera/recommend15.jpg" alt=""><hr>腾讯极光投影仪T2 投影仪家用 卧室投影 家庭影院 <br><span>￥2,299.00</span></div>
+					<div class="recommend"><img src="image/camera/recommend16.jpg" alt=""><hr>橙影抖音智能摄影机 口袋云台相机vlog运动摄影机<br><span>￥1,999.00</span></div>
+					<div class="recommend"><img src="image/camera/recommend21.jpg" alt=""><hr>坚果G9投影机家用 卧室办公<br><span>￥2,899.00</span></div>
+					<div class="recommend"><img src="image/camera/recommend22.jpg" alt=""><hr>大疆 DJI 御 Mavic Air 2 便携可折叠航拍无人机<br><span>￥4,999.00</span></div>
+					<div class="recommend"><img src="image/camera/recommend23.jpg" alt=""><hr>GoPro MAX 360度全景运动相机 Vlog摄像机<br><span>￥3,999.00</span></div>
+					<div class="recommend"><img src="image/camera/recommend24.jpg" alt=""><hr>格之格388a硒鼓 88a大容量3支装适用惠普<br><span>￥195.00</span></div>
+					<div class="recommend"><img src="image/camera/recommend25.jpg" alt=""><hr>佳能（Canon）EOS 200D II 200D2 迷你单反相机<br><span>￥5,199.00</span></div>
+					<div class="recommend"><img src="image/camera/recommend26.jpg" alt=""><hr>佳能（Canon）EOS 5D Mark IV 5D4 单反相机<br><span>￥27,199.00</span></div>
+				</div>
+			</div>
+		
+		</div>
+
+	</div>
+
+	<div id="side">
+		<div class="goguche">
+			<a href="gouwuche.html"><img src="image/gouwuche.png" alt=""></a>
+		</div>
+		<div>
+			<a class="toTop" href="#"><img src="image/top.png" alt=""></a>
+		</div>
+	</div>
+	<div id="foot"><span>爱数码</span><img src="image/爱数码.png"></div>
+
+</body>
+</html>

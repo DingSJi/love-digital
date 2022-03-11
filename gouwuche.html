@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script src="./js/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/mycss.css">
+	<link rel="stylesheet" type="text/css" href="css/gouwuche_css.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/gouwuche_js.js"></script>
+</head>
+<body>
+	<div id="header">
+		<div id="logo" ><img src="image/爱数码.png"><span>爱数码</span></div>
+		<div id="small-menu">
+			<ul class="small-menu">
+				<li ><a href="index.html">首页</a></li>
+				<li ><a href="gouwuche.html">购物车</a></li>
+				<li ><a href="about.html">关于我们</a></li>
+				<li ><a href="#" class="register">注册/</a><a href="#" class="login">登陆</a></li>
+			</ul>
+		</div>
+	</div>
+	
+	<div class="modal fade" tabindex="-1" role="dialog" id="register">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <h4 class="modal-title">注册</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form-horizontal">
+					<div class="form-group">
+					  <label for="inputEmail3" class="col-sm-2 control-label">邮箱</label>
+					  <div class="col-sm-10">
+						<input type="email" class="form-control" id="inputEmail1" placeholder="请输入邮箱">
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+					  <div class="col-sm-10">
+						<input type="password" class="form-control" id="inputPassword1" placeholder="请输入密码">
+						<input type="password" class="form-control" id="inputPassword2" placeholder="请再次输入密码">
+					  </div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			  <button type="button" class="btn btn-primary">注册</button>
+			</div>
+		  </div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="login">
+		<div class="modal-dialog" role="document">
+		  <div class="modal-content">
+			<div class="modal-header">
+			  <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <h4 class="modal-title">登录</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form-horizontal">
+					<div class="form-group">
+					  <label for="inputEmail3" class="col-sm-2 control-label">邮箱</label>
+					  <div class="col-sm-10">
+						<input type="email" class="form-control" id="inputEmail2" placeholder="请输入邮箱">
+					  </div>
+					</div>
+					<div class="form-group">
+					  <label for="inputPassword3" class="col-sm-2 control-label">密码</label>
+					  <div class="col-sm-10">
+						<input type="password" class="form-control" id="inputPassword3" placeholder="请输入密码">
+					  </div>
+					</div>
+					<div class="form-group">
+					  <div class="col-sm-offset-2 col-sm-10">
+						<div class="checkbox">
+						  <label>
+							<input type="checkbox"> 记住我
+						  </label>
+						</div>
+					  </div>
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+			  <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+			  <button type="button" class="btn btn-primary">登录</button>
+			</div>
+		  </div><!-- /.modal-content -->
+		</div><!-- /.modal-dialog -->
+	  </div><!-- /.modal -->
+
+	<div id="main-gouwuche">
+		<h2>购物车</h2>
+		<table >
+			<thead>
+				<tr style="text-align: center;">
+					<th width="500px;">商品名称</th>
+					<th>单价</th>
+					<th>数量</th>
+					<th>金额小计</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td><img src="image/gouwuche/product1.png"><p>Apple iPhone 13 pro</p></td>
+					<td>7999</td>
+					<td><button name="jianyi" class="btn">-</button><input type="text" id="num1" value="1" class="num"><button name="jiayi" class="btn">+</button></td>
+					<td>￥:<input type="text" id="price1" value="7999" class="price " disabled></td>
+				</tr>
+				<tr>
+					<td><img src="image/gouwuche/product2.png"><p>联想ThinkPad X1 Carbon</p></td>
+					<td>9999</td>
+					<td><button name="jianyi" class="btn">-</button><input type="text" id="num2" value="1" class="num"><button name="jiayi" class="btn">+</button></td>
+					<td>￥:<input type="text" id="price2" value="9999" class="price" disabled></td>
+				</tr>
+			</tbody>
+			<tfoot style="width: 300px;">
+				<tr style="width: 200px;">
+					<td colspan="5" style="width: 200px;">商品总金额：￥:<input type="text" name="total" id="total" value="17998" class="price" disabled></td>
+				</tr>
+			</tfoot>
+		</table>
+		<button id="pay" class="btn btn-primary btn-lg">马上结算</button>
+	</div>
+	
+	<div id="foot"><span>爱数码</span><img src="image/爱数码.png"></div></body>
+</html>
